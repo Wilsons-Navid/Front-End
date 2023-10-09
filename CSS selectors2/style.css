@@ -1,0 +1,89 @@
+:root{
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: blueviolet;
+
+    border-radius: 50px;
+}
+
+.images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+
+[src]{
+    border-radius: 80px;
+}
+/*Selects only img with src attribute*/
+img[src]{
+      width: 20vw;
+      height: 20vh;
+      margin-bottom: 50px;
+}
+
+
+img[src]:hover{
+    opacity: 0.8;
+    height: 30vh;
+    border-radius: 50%;
+    
+}
+
+
+img[src^="C"]{
+    border: 5px solid red;
+}
+img[src$='.jpg']{
+    width: 30vw;
+}
+img[src*='Cobra']{
+ 
+    width: 30vw;
+    border: 5px solid rgba(14, 14, 14, 0.6);
+
+}
+
+
+img[src*='Sheep']{
+ 
+    width: 30vw;
+    border: 5px solid white;
+}
+
+img[src*='tiger']{
+ 
+    width: 30vw;
+    border: 5px solid rgb(192, 192, 45);
+}
+
+img[src*='Monkey']{
+ 
+    width: 30vw;
+    border: 5px solid rgba(56, 143, 56, 0.9);
+}
+
+
+img[src*='Ostrich']{
+ 
+    width: 30vw;
+    border: 5px solid rgb(231, 225, 225);
+}
+
+
+img[src*='parrot']{
+ 
+    width: 30vw;
+    border: 5px solid rgb(228, 50, 50, 0.6);
+}
+
+
+img[src*='Squirels']{
+ 
+    width: 30vw;
+    border: 5px solid rgba(140, 186, 48, 0.6);
+}
